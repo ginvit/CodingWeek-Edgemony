@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto:wght@300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <title>Star Movies</title>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navbar-container">
+        <div class="logo-container">
+          <h1 class="logo">Star Movies</h1>
+        </div>
+        <div class="menu-container">
+          <ul class="menu-list">
+            <li class="menu-list-item active">Home</li>
+            <li class="menu-list-item">Movies</li>
+            <li class="menu-list-item">Series</li>
+            <li class="menu-list-item">Popular</li>
+            <li class="menu-list-item">Trends</li>
+          </ul>
+        </div>
+        <div class="profile-container">
+          <img class="profile-picture" src="./img/account.png" />
+          <div class="profile-text-container">
+            <span class="profile-text">Profile</span>
+            <i class="fa-solid fa-caret-down"></i>
+          </div>
+          <div class="toggle">
+            <i class="fas fa-moon toggle-icon"></i>
+            <i class="fas fa-sun toggle-icon"></i>
+            <div class="toggle-ball"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar">
+      <i class="left-menu-icon fas fa-search"></i>
+      <i class="left-menu-icon fas fa-home"></i>
+      <i class="left-menu-icon fas fa-users"></i>
+      <i class="left-menu-icon fas fa-bookmark"></i>
+      <i class="left-menu-icon fas fa-tv"></i>
+      <i class="left-menu-icon fas fa-hourglass-start"></i>
+      <i class="left-menu-icon fas fa-shopping-cart"></i>
+    </div>
+    <div class="container">
+      <div class="content-container">
+        <div
+          class="featured-content"
+          style="
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #151515),
+              url('./img/uma2.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+          "
+        >
+          <img
+            class="featured-title"
+            src="img/Kill_Bill_(logo).png"
+            alt="kill bill"
+          />
+          <p class="featured-desc">
+            Risvegliatasi dal coma, un'assassina va alla ricerca del suo ex capo
+            e della gang responsabile dell'agguato in cui è caduta quattro anni
+            prima.
+          </p>
+          <button class="featured-button">WATCH NOW</button>
+        </div>
+      </div>
+    </div>
+    <main class="main-content">
+      <div><h1 class="film-text">Film List</h1></div>
+
+      <div class="grid-test">
+        <div id="film" class="main-wrapper-section"></div>
+      </div>
+
+      <div id="filmContainer" class="film-container"></div>
+
+      <div class="modal"></div>
+    </main>
+  </body>
+</html>
